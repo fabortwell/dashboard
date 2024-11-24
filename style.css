@@ -1,6 +1,11 @@
 body{
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+
 }
 .dashboard-wrap{
     display: grid;
@@ -19,9 +24,8 @@ body{
 }
 
 .side{
-    background-color: hsla(215 98% 50% / 0.98);
+    background-color: hsla(202 87% 48% / 0.99);
     color: white;
-    text-align: center;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -36,4 +40,57 @@ body{
     grid-row-start: 2;
     grid-row-end: 3;
 
+}
+.dashboard-items{
+    display: grid;
+    gap: 10px;
+    color: white;
+    display: grid;
+    margin-top: 2rem;
+}
+.unordered-list{
+    list-style: none;
+    text-decoration: none;
+}
+
+.unordered-list a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 15px;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+
+.dash a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+.dash ul{
+    list-style: none;
+}
+
+.dash-lower-items a{
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 20px;
+    font-weight: 15px;
+    color: #fff;
+    gap: 15px;
+}
+
+.dash-lower-items ul{
+         list-style: none;
 }
