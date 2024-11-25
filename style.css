@@ -2,95 +2,131 @@ body{
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
     padding: 0;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-
+    height: 100vh;
 }
+
 .dashboard-wrap{
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 60px 1fr;
     height: 100vh;
 }
+
 .header{
     background-color: hsla(173 0% 97% / 0.98);
-    color:rgb(0, 0, 0);
-    text-align: center;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-}
 
-.side{
+}
+.sidebar{
     background-color: hsla(202 87% 48% / 0.99);
-    color: white;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 3;   
 }
+.dash{
+    font-size: 20px;
+    font-weight: 10px;
+}
+.dashboard ul, a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-family:  "Roboto", sans-serif;
+    font-weight: 15px;
+    font-size: 14px;
+    font-size: 20px;
+    font-weight: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+.dashboard ul{
+   display: flex;
+   gap: 18px;
+   flex-direction: column;
+}
+
+.middle-dash{
+    margin-top: 40px;
+}
+
+.last-dashboard-item{
+    margin-top: 40px;
+}
+   
+
 .main{
-    background-color: hsl(32 0% 77%);
-    color: white;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: hsl(199 68% 95%);
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    padding: 25px;
+    gap: 20px;
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card4 card5 card3"
+    "card6 card7 card8"
+    ;
+}
+.cards{
+    background-color: #fffdfd;
+    border-radius: 10px;
+    padding: 13px;
+    color: black;
+}
 
-}
-.dashboard-items{
-    display: grid;
-    gap: 10px;
-    color: white;
-    display: grid;
-    margin-top: 2rem;
-}
-.unordered-list{
-    list-style: none;
-    text-decoration: none;
-}
-
-.unordered-list a{
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 15px;
+.cards > p{
+    font-size: 19px;
+    font-weight: 10px;
     font-family: "Roboto", sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 15px;
+    line-height: 1.5;
 }
 
+.cards:nth-child(1){
+    grid-area: card1;
+}
+.cards:nth-child(2){
+    grid-area: card2;
+}
+.cards:nth-child(3){
+    grid-area: card3;
+}
 
-.dash a{
-    list-style: none;
+.cards:nth-child(4){
+    grid-area: card4;
+}
+
+.cards:nth-child(5){
+    grid-area: card5;
+}
+.cards:nth-child(6){
+    grid-area: card6;
+}
+.cards:nth-child(7){
+    grid-area: card7;
+}
+.cards:nth-child(8){
+    grid-area: card8;
+}
+
+.cards ul{
+    display: flex;
+    gap: 8px;
     text-decoration: none;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 15px;
-    font-family: "Roboto", sans-serif;
+    
 }
 
-.dash ul{
+.cards li{
     list-style: none;
+    align-items: flex-end;
 }
-
-.dash-lower-items a{
-    text-decoration: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    font-size: 20px;
-    font-weight: 15px;
-    color: #fff;
-    gap: 15px;
-}
-
-.dash-lower-items ul{
-         list-style: none;
-}
+/* #card-3{
+    height: 38rem;
+} */
