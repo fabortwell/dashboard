@@ -13,6 +13,8 @@ body{
 }
 
 .header{
+    display: flex;
+    padding: 10px;
     background-color: hsla(173 0% 97% / 0.98);
     grid-column-start: 2;
     grid-column-end: 3;
@@ -147,14 +149,10 @@ body{
     
 }
 
-#icons ul{
-    display: flex;
-   align-items: flex-end;
-}
 .cards li{
     list-style: none;
-    align-items: flex-end;
 }
+
 .avatar > img{
     vertical-align: middle;
     width: 50px;
@@ -202,4 +200,36 @@ body{
 .horizontal{
     border: 1px solid gray;
 
+}
+
+.search-bar{
+     display: flex;
+     gap: 10px;
+     align-items: center;
+     padding: 10px;   
+}
+ #imagee-cent{
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: none;
+    background-color: hsla(173 0% 97% / 0.98);
+ }
+
+.tophead{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 350px;
+    cursor: pointer;
+}
+
+
+#searchweb{
+border-radius: 10px;
+background-color: gray;
+outline: none;
+border: none;
+width: 600px;
+height: 25px;
+color: #fff;
 }
