@@ -14,7 +14,6 @@ body{
 
 .header{
     display: flex;
-    padding: 10px;
     background-color: hsla(173 0% 97% / 0.98);
     grid-column-start: 2;
     grid-column-end: 3;
@@ -205,7 +204,6 @@ body{
 .search-bar{
      display: flex;
      gap: 10px;
-     align-items: center;
      padding: 10px;   
 }
  #imagee-cent{
@@ -217,10 +215,11 @@ body{
 
 .tophead{
     display: flex;
-    align-items: center;
     gap: 15px;
     margin-left: 350px;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -232,4 +231,10 @@ border: none;
 width: 600px;
 height: 25px;
 color: #fff;
+}
+
+.to-head{
+ 
+    background-color:  hsla(202 87% 48% / 0.99);
+   
 }
